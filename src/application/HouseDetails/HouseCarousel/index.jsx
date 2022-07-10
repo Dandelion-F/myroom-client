@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel } from '@douyinfe/semi-ui';
-import './style.css';
+import './index.css';
 
 export default class HouseCarousel extends React.Component {
   constructor(props) {

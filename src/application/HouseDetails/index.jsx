@@ -14,8 +14,6 @@ import HouseFooter from './HouseFooter';
 import { useNavigate, useParams } from 'react-router-dom';
 import cookie from "react-cookies";
 import "./index.css";
-import "./style.css";
-import "../../assets/global-style.css"
 
 export default function HomeDetail(props) {
   let { pid } = props;

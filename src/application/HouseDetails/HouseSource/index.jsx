@@ -1,8 +1,7 @@
 import React from 'react';
 import { Col, Row } from '@douyinfe/semi-ui';
-import '../index.css';
-import './style.css';
 import Card from '../../../components/Card';
+import './index.css';
 
 export default function HouseSource() {
   return (

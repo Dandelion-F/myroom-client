@@ -6,8 +6,7 @@ import {
   PublishInstitutionIcon,
   QualificationIcon,
 } from '../Icon';
-import '../index.css';
-import './style.css';
+import './index.css';
 
 /**
  *

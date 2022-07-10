@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@douyinfe/semi-ui";
 import cookie from "react-cookies";
-import "../../assets/global-style.css";
 import { getJsonById } from "../../api/request";
 import { render_json } from "../../api/utils";
 import { SignalRClient } from "../../api/signalrClient";

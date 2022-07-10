@@ -1,8 +1,7 @@
 import React from 'react';
 import { Col, Row, Tabs, TabPane } from '@douyinfe/semi-ui';
 import { BusIcon } from '../Icon';
-import '../index.css';
-import './style.css';
+import './index.css';
 
 export default function HouseNeighbor() {
   return (

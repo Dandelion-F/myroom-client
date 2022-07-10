@@ -1,8 +1,7 @@
 import React from 'react';
 import { Col, Row } from '@douyinfe/semi-ui';
 import { ChampionIcon, LineChartIcon, BoyAvatar } from '../Icon';
-import '../index.css';
-import './style.css';
+import './index.css';
 
 export default function HouseAssess() {
   return (

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Col, Row } from '@douyinfe/semi-ui';
-import '../index.css';
-import './style.css';
+import './index.css';
 
 export default function HouseTest() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Row, Col, Card } from '@douyinfe/semi-ui';
 import { Link } from 'react-router-dom';
-import './style.css';
+import { Row, Col, Card } from '@douyinfe/semi-ui';
+import './index.css';
 
 export default function HomeCard() {
   return (
