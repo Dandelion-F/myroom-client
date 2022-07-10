@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_3444994_hwz63f68414.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_3444994_hwz63f68414.woff') format('woff'),
+    url('//at.alicdn.com/t/font_3444994_hwz63f68414.ttf') format('truetype'),
+    url('#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 1.5rem;
+  font-style: normal;
+}

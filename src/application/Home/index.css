@@ -1,0 +1,24 @@
+:root {
+  --part-bg-color: white;
+  --part-text-color: #343535;
+}
+
+.home_container {
+  height: 100%;
+}
+
+.all {
+  background-color: var(--part-bg-color) !important;
+  color: var(--part-text-color) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --part-bg-color: rgb(22, 22, 26);
+    --part-text-color: rgb(249, 249, 249);
+  }
+
+  body {
+    background-color: rgb(35, 36, 41);
+  }
+}
