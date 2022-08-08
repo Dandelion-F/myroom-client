@@ -29,7 +29,6 @@ function Register() {
     });
   }
 
-  const dispatch = useDispatch();
   function handleChange(value, e) {
     let key = e.target.name;
     if (key === 'username') {
@@ -41,12 +40,13 @@ function Register() {
     }
   }
 
+  const dispatch = useDispatch();
   function handleSubmit(e) {
     e.preventDefault();
     let user = {
-      username: username,
-      password: password,
-      passwordConfirm: passwordConfirm,
+      username,
+      password,
+      passwordConfirm,
     };
     dispatch(asyncRegister(user));
   }
@@ -55,7 +55,6 @@ function Register() {
     <form onSubmit={handleSubmit}>
       <div className="register_content">
         <Welcome />
-        <br />
         <br />
         <Input
           placeholder="请输入用户名"
