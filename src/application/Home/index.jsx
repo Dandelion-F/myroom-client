@@ -5,7 +5,7 @@ import NavBar from '../../components/NavBar/index';
 import { refreshAccessToken } from '../../api/request';
 import './index.css';
 
-function Home(props) {
+function Home() {
   useEffect(() => {
     const mql = window.matchMedia('(prefers-color-scheme: dark)');
     if (mql.matches) {
@@ -34,7 +34,12 @@ function Home(props) {
   return (
     <div className="home_container">
       <Outlet />
-      {path === 'houseDetails' || path === 'activity' ? null : <NavBar />}
+      {path === 'houseDetails' ||
+      path === 'activity' ||
+      path === 'login' ||
+      path === 'register' ? null : (
+        <NavBar />
+      )}
     </div>
   );
 }
