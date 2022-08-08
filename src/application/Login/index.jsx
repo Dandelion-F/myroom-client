@@ -1,46 +1,47 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { Input, Button } from "@douyinfe/semi-ui";
-import { IconUnlock, IconUser } from "@douyinfe/semi-icons";
-import { asyncLogin } from "../../store/slice/loginSlice";
-import Welcome from "../../components/Welcome";
-import "./index.css";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { Input, Button } from '@douyinfe/semi-ui';
+import { IconUnlock, IconUser } from '@douyinfe/semi-icons';
+import { asyncLogin } from '../../store/slice/loginSlice';
+import Welcome from '../../components/Welcome';
+import './index.css';
 
 function Login() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
   // 注册成功后返回重定向的路由（重定向到主页/home）
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-
   function handleChange(value, e) {
     let key = e.target.name;
-    if (key === "username") {
+    if (key === 'username') {
       setUsername(value);
-    } else if (key === "password") {
+    } else if (key === 'password') {
       setPassword(value);
     }
   }
+
   function handleSubmit(e) {
     e.preventDefault();
-    let user = { username: username, password: password };
+    let user = { username, password };
     let p = dispatch(asyncLogin(user));
-    p.then(() => {
-      navigate("/");
-      // Notification.success({
-      //   title: "登陆成功",
-      //   duration: 3,
-      //   position: "top",
-      // });
-      console.log("dispatch_later---");
-    });
+    p.then(
+      () => {
+        navigate('/');
+        console.log('login dispatch later---');
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
   }
+
   return (
     <div className="login_content">
       <Welcome />
-      <br />
       <br />
       <Input
         placeholder="请输入用户名"
@@ -59,8 +60,6 @@ function Login() {
       ></Input>
       <br />
       <br />
-      <br />
-      <br />
       <Button
         theme="solid"
         type="primary"
@@ -77,11 +76,12 @@ function Login() {
         type="primary"
         style={{ marginRight: 8 }}
         block
-        onClick={() => navigate("/register")}
+        onClick={() => navigate('/register')}
       >
         注册
       </Button>
     </div>
   );
 }
+
 export default Login;
