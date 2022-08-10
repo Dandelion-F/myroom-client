@@ -2,7 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { getCount } from '../../api/utils';
 import { getHouseInfo } from '../../api/request';
+import axios from "axios";
 import './index.css';
+
+function getImageUrl(name) {
+  return new URL(`./assets/${name}.jpg`, import.meta.url).href
+}
 
 function Card(props) {
   const { id, option, page } = props;
@@ -11,11 +16,15 @@ function Card(props) {
 
   useEffect(() => {
     const getCardInfoT = (id) => {
-      getHouseInfo(id)
+      axios.get('/api/house', {
+        params: {
+          id,
+        }
+      })
         .then((response) => {
           let p = {
             ...response.data.data,
-            image: require(`./assets/${((option * page) % 20) + 1}.jpg`),
+            image: getImageUrl(((option * page) % 20) + 1),
             tags: ['值得购买', '住宅', '购物方便', '公交直达'],
           };
           setCardData(p);

@@ -16,6 +16,7 @@ import HouseNeighborSource from './HouseNeighborSource';
 import HouseFooter from './HouseFooter';
 import { useNavigate, useLocation, useParams } from 'react-router-dom';
 import './index.css';
+import axios from 'axios';
 
 if (window.matchMedia) {
   const mql = window.matchMedia('(prefers-color-scheme: dark)');
@@ -51,7 +52,11 @@ export default function HomeDetail(props) {
   let { id: _id } = useParams();
   const id = pid ?? _id;
 
-  const { data: _data, loading } = useRequest(() => getHouseInfo(id), {
+  const { data: _data, loading } = useRequest(() => axios.get('/api/house', {
+    params: {
+      id,
+    }
+  }), {
     refreshDeps: [id],
     loadingDelay: 100,
   });
