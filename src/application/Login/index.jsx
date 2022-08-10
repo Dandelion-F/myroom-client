@@ -63,7 +63,7 @@ function Login() {
       <Button
         theme="solid"
         type="primary"
-        style={{ marginRight: 8 }}
+        style={{ marginRight: 0 }}
         block
         onClick={handleSubmit}
       >
@@ -74,12 +74,14 @@ function Login() {
       <Button
         theme="light"
         type="primary"
-        style={{ marginRight: 8 }}
+        style={{ marginRight: 0 }}
         block
         onClick={() => navigate('/register')}
       >
         注册
       </Button>
+      <br />
+      <br />
     </div>
   );
 }

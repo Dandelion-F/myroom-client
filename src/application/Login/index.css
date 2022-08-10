@@ -4,3 +4,11 @@
   width: 40%;
   margin: 0 auto;
 }
+
+@media (max-width: 640px) {
+  .login_content {
+    padding-top: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
