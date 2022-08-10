@@ -85,7 +85,7 @@ function Register() {
         <Button
           theme="solid"
           type="primary"
-          style={{ marginRight: 8 }}
+          style={{ marginRight: 0 }}
           block
           htmlType="submit"
         >
