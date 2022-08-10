@@ -1,47 +1,58 @@
 /* HouseFooter */
 
 .footer-before {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .footer-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .footer {
-    padding-top: 15px;
-    background-color: white;
-    padding-bottom: calc(10px + env(safe-area-inset-bottom)) !important;
+  padding-top: 15px;
+  padding-left: 10px;
+  background-color: white;
+  padding-bottom: calc(10px + env(safe-area-inset-bottom)) !important;
 }
 
 .white-small-font {
-    color: white;
-    font-size: 14px;
+  color: white !important;
+  font-size: 14px;
 }
 
 .online-contact {
-    display: inline-block;
-    border-radius: 20px;
-    background-color: #FD972A;
-    padding: 7px;
-    text-align: center;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #fd972a;
+  padding: 7px;
+  text-align: center;
 }
 
 .phone-call {
-    display: inline-block;
-    border-radius: 20px;
-    background-color: #FC5601;
-    padding: 7px;
-    text-align: center;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #fc5601;
+  padding: 7px;
+  text-align: center;
+  margin-right: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
-.footer {
-    padding-top: 15px;
-    background-color: rgb(23, 22, 22);
-    padding-bottom: calc(10px + env(safe-area-inset-bottom)) !important;
-}
+  .footer {
+    color: white;
+    background-color: rgb(22, 22, 26);
+  }
+
+  .online-contact {
+    border: 1px solid #fc5601;
+    background-color: rgb(35, 36, 41);
+  }
+
+  .phone-call {
+    border: 1px solid #fc5601;
+    background-color: rgb(35, 36, 41);
+  }
 }

@@ -7,6 +7,10 @@
 
 /* common */
 
+.home-detail-container {
+  background: #F5F5F5;
+}
+
 .back-nav {
   opacity: 0.5;
   position: fixed;
@@ -193,10 +197,15 @@
   body {
     background-color: rgb(35, 36, 41);
   }
+
   .person-tag {
     font-size: 14px;
     padding: 2px;
     border: 1px solid grey;
     background-color: #171616;
+  }
+
+  .home-detail-container {
+    background-color: #6d6d6d;
   }
 }

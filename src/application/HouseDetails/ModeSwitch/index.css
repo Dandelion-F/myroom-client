@@ -1,0 +1,34 @@
+/* ModeSwitch */
+.mode-switch {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 5px;
+  position: fixed;
+  top: 12px;
+  right: 30%;
+  z-index: 9;
+}
+
+.mode-switch-toggle {
+  display: flex;
+  justify-content: space-between;
+  background-color: purple;
+  height: 100%;
+  width: 50px;
+  padding: 5px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.mode-switch-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.mode-off {
+    background-color: purple;
+}

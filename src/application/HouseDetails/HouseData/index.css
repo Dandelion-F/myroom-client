@@ -33,7 +33,6 @@
   justify-content: space-between;
   background-color: #fef9f4;
   padding: 10px 10px;
-  border-radius: 10px;
 }
 
 .subscribe-right {
@@ -45,19 +44,10 @@
 
 @media (prefers-color-scheme: dark) {
   .subscribe {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #443d3d;
-    padding: 10px 10px;
-    border-color: #fef9f4;
-    border-radius: 10px;
+    background-color: rgb(35, 36, 41);
   }
 
   .subscribe-right {
-    border: 1px solid #f75402;
-    background-color: rgb(21, 20, 20);
-    padding: 5px;
-    border-radius: 10px;
+    background-color: rgb(22, 22, 26);
   }
 }

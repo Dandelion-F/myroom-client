@@ -42,7 +42,7 @@
 
 .landscape {
   display: inline-block;
-  background-image: url("/public/houseDetail/fake-1.png");
+  background-image: url('/public/houseDetail/fake-1.png');
   width: 80px;
   height: 80px;
   background-size: 100%;
@@ -60,8 +60,23 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .houseTest {
+    color: white;
+  }
+
+  .house-test-top,
   .house-test-bottom {
-    background-color: rgb(16, 16, 16);
-    border-radius: 0 0 10px 10px;
+    background-color: rgb(22, 22, 26);
+  }
+
+  .house-test-top .special-font-1,
+  .house-test-top .special-font-2,
+  .house-test-top .special-font-3 {
+    color: #af7528;
+  }
+
+  .house-test-bottom .desc {
+    background-color: #58320d;
+    color: #af7528;
   }
 }

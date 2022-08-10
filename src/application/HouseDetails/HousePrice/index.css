@@ -48,7 +48,7 @@
 
 .line-chart {
   height: 180px;
-  background-image: url("/public/houseDetail/fake-3.png");
+  background-image: url('/public/houseDetail/fake-3.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -56,7 +56,6 @@
 
 @media (prefers-color-scheme: dark) {
   .price-sum {
-    background-color: #232121;
-    padding: 20px 0;
+    background-color: rgb(35, 36, 41);
   }
 }
